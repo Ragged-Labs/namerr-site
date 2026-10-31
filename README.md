@@ -30,4 +30,8 @@ All links are relative to the repository site path, so Pages works without a cus
 
 ## Brand assets
 
-The website uses `assets/namerr-logo.png`, an exact byte-for-byte copy of `Namerr-Docker-Icon.png` from `raggedred/emby_organiser_docker`. It is used for the header, favicon, Apple touch icon and Open Graph image. This replaces the original placeholder logo.
+The website uses `assets/namerr-logo-8dd16181.png`, an exact byte-for-byte copy of `Namerr-Docker-Icon.png` from `raggedred/emby_organiser_docker`. It is used for the header, favicon, Apple touch icon and Open Graph image. This replaces the original placeholder logo.
+
+## Website logo cache control
+
+All page templates reference the content-versioned official logo `assets/namerr-logo-8dd16181.png` (sha256-like prefix is the Git object SHA prefix). This is an exact copy of `Namerr-Docker-Icon.png` in the application repository and prevents browser caches from reusing previous logo URLs on Docs, Support, Roadmap and the homepage. The original logo path remains in Git for backward compatibility with older cached HTML.
