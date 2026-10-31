@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ragged-labs.github.io/namerr-site/sitemap.xml
