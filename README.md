@@ -27,3 +27,7 @@ See [LAUNCH_CHECKLIST.md](LAUNCH_CHECKLIST.md) for publication and donation/down
 ## Editing
 
 All links are relative to the repository site path, so Pages works without a custom domain. Update real public links only when tested. Avoid publishing private app repository URLs as working public downloads. No analytics, embeds, trackers, external fonts or cookies are installed by this site.
+
+## Brand assets
+
+The website uses `assets/namerr-logo.png`, an exact byte-for-byte copy of `Namerr-Docker-Icon.png` from `raggedred/emby_organiser_docker`. It is used for the header, favicon, Apple touch icon and Open Graph image. This replaces the original placeholder logo.
