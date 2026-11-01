@@ -1,0 +1,97 @@
+name: Publish Namerr website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*.html'
+      - 'assets/**'
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - '.nojekyll'
+      - '.github/workflows/publish-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Preserve the active deployment. Keep at most one newer run waiting:
+# GitHub automatically replaces superseded pending runs in this group.
+concurrency:
+  group: namerr-pages-production
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Validate and package static website
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    outputs:
+      publish: ${{ steps.source.outputs.publish }}
+    steps:
+      - name: Confirm GitHub Actions is the Pages publishing source
+        id: source
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_type="$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq '.build_type // "legacy"')"
+          if [[ "$source_type" == 'workflow' ]]; then
+            echo 'publish=true' >> "$GITHUB_OUTPUT"
+            echo 'Pages uses GitHub Actions; deployment enabled.'
+          else
+            echo 'publish=false' >> "$GITHUB_OUTPUT"
+            echo '::notice::Pages still uses branch publishing. Skipping custom deployment to avoid conflicts. Set Settings > Pages > Source to GitHub Actions, then run this workflow once manually.'
+          fi
+
+      - name: Checkout website
+        if: steps.source.outputs.publish == 'true'
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        if: steps.source.outputs.publish == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Package and validate public site
+        if: steps.source.outputs.publish == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          find . -maxdepth 1 -type f \( -name '*.html' -o -name '*.txt' -o -name '*.xml' \) -exec cp -- {} _site/ \;
+          cp -a assets _site/assets
+          cp .nojekyll _site/.nojekyll
+          test -s _site/index.html
+          test -s _site/support.html
+          test -s _site/404.html
+          test -s _site/assets/namerr-logo-8dd16181.png
+          test -s _site/assets/buymeacoffee-namerr-qr.svg
+          for mockup in tv-library-concept guided-review-concept movie-library-concept change-preview-concept; do
+            test -s "_site/assets/previews/${mockup}.webp"
+          done
+          echo 'Namerr homepage, support, QR, logo and four previews verified.'
+
+      - name: Upload Pages artifact (1-day retention)
+        if: steps.source.outputs.publish == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+          retention-days: 1
+          include-hidden-files: true
+
+  deploy:
+    name: Deploy website to GitHub Pages
+    needs: build
+    if: needs.build.outputs.publish == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy Pages artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
