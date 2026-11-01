@@ -48,4 +48,4 @@ Four original AI-generated **31 October 2026 Namerr UI concept images** belong u
 | `assets/previews/movie-library-concept.webp` | `image-gen-3.png` | Movies library poster grid |
 | `assets/previews/change-preview-concept.webp` | `image-gen-4.png` | Review and Preview Changes |
 
-**Do not merge the gallery PR until all four images are uploaded and their paths and display are tested.** This branch is intentionally held as a draft until the binary assets exist in the GitHub repository. The original PNGs are saved in the ChatGPT Movie Naming Tool image library; the web-optimised PNG-to-WebP bundle has been prepared separately for upload.
+**All four WebP assets have been uploaded and verified in the gallery branch.** Image file paths, RIFF/WebP headers, responsive grid and accessible labels were checked. The original PNGs remain in the ChatGPT Movie Naming Tool image library.
