@@ -1,6 +1,6 @@
 # Public launch checklist — Namerr website
 
-Website repository: `Ragged-Labs/namerr-site` (kept separate from the private application repository and its Actions budget).
+Website repository: `Ragged-Labs/namerr-site` (**private prelaunch**), separate from the private new product home `Ragged-Labs/namerr` and legacy development/compatibility repository `raggedred/emby_organiser_docker`.
 
 ## Website acceptance
 
@@ -23,13 +23,22 @@ Website repository: `Ragged-Labs/namerr-site` (kept separate from the private ap
 - [ ] Configure public app support/issue locations.
 - [ ] Only then replace the informational download status with tested real release links.
 
-## Donations
+## Donations — Buy Me a Coffee and Bitcoin
 
-- [ ] Choose a legitimate provider (e.g. GitHub Sponsors, Ko-fi or Buy Me a Coffee).
-- [ ] Create and verify the recipient account / payment destination.
-- [ ] Review fee, tax, legal and refund terms for the selected provider.
-- [ ] Publish a clear voluntary contribution policy, with no false entitlement claim.
-- [ ] Only then activate a direct public donation link.
+- [ ] Verify the exact Namerr Buy Me a Coffee creator account, payout recipient and fees. Proposed `buymeacoffee.com/namerr` is **unverified** and must not be linked yet.
+- [ ] Verify ownership and payout destination before enabling any payment button.
+- [ ] Confirm a dedicated Bitcoin mainnet BTC **public receiving address**, network and beneficiary; never publish wallet private keys or recovery phrases.
+- [ ] Independently verify the exact displayed address and any QR code against the intended wallet.
+- [ ] Explain public blockchain observability, irreversible transfers, fees, and relevant tax/accounting considerations.
+- [ ] State that contributions are voluntary and do not buy feature priority or guaranteed support.
+- [ ] Review [DONATIONS_SETUP.md](DONATIONS_SETUP.md) and obtain explicit public-activation approval.
+
+## Brand and repository status
+
+- [ ] Confirm use of RaggedLabs Media and `raggedlabs.media` on all public pages.
+- [ ] Verify whether the parent brand domain has an actual live website before making it a clickable link.
+- [ ] Keep `Ragged-Labs/namerr` private until the installer/release migration is complete.
+- [ ] Keep `Ragged-Labs/namerr-site` private and do not republish Pages before explicit owner approval.
 
 ## Optional custom domain
 
