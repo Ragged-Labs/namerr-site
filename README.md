@@ -49,3 +49,7 @@ Four original AI-generated **31 October 2026 Namerr UI concept images** belong u
 | `assets/previews/change-preview-concept.webp` | `image-gen-4.png` | Review and Preview Changes |
 
 **All four WebP assets have been uploaded and verified in the gallery branch.** Image file paths, RIFF/WebP headers, responsive grid and accessible labels were checked. The original PNGs remain in the ChatGPT Movie Naming Tool image library.
+
+## Buy Me a Coffee QR code
+
+Support includes a locally hosted QR SVG `assets/buymeacoffee-namerr-qr.svg` encoding **https://buymeacoffee.com/namerr**, the Namerr creator URL supplied earlier. Its matrix was validated using OpenCV's QR decoder. This is an independently regenerated pixel-sharp QR rather than the exact attached image artwork, because an uploadable original image file was unavailable. The clickable link remains as a fallback; payment processing occurs on Buy Me a Coffee.
