@@ -36,3 +36,16 @@ Security disclosures: [SECURITY.md](SECURITY.md). Before community launch, revie
 ## Support link review
 
 The external Buy Me a Coffee destination currently configured is `https://buymeacoffee.com/namerr`, based on the project owner’s specified prospective name. **The profile and payout recipient have not been independently verified.** Public copy explicitly instructs visitors to verify recipient identity before donating. Do not publish a Bitcoin receiving address without owner-supplied wallet verification.
+
+## Planned UI gallery — source images
+
+Four original AI-generated **31 October 2026 Namerr UI concept images** belong under `assets/previews/` (optimised WebP copies of the saved original PNGs). The index page already contains a responsive, lazy-loaded 2 × 2 gallery labelled **concept artwork, not shipped UI**.
+
+| Web image path | Source Library image | UI subject |
+|---|---|---|
+| `assets/previews/tv-library-concept.webp` | `image-gen-1.png` | TV Shows library table |
+| `assets/previews/guided-review-concept.webp` | `image-gen-2.png` | Guided Review workflow |
+| `assets/previews/movie-library-concept.webp` | `image-gen-3.png` | Movies library poster grid |
+| `assets/previews/change-preview-concept.webp` | `image-gen-4.png` | Review and Preview Changes |
+
+**Do not merge the gallery PR until all four images are uploaded and their paths and display are tested.** This branch is intentionally held as a draft until the binary assets exist in the GitHub repository. The original PNGs are saved in the ChatGPT Movie Naming Tool image library; the web-optimised PNG-to-WebP bundle has been prepared separately for upload.
