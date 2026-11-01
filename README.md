@@ -1,37 +1,34 @@
-# Namerr — official website
+# Namerr — Coming Soon website
 
-This is the independent public website for **Namerr**, a self-hosted TV and movie organiser by Ragged Labs.
+**Public site:** https://ragged-labs.github.io/namerr-site/
 
-## Current site status
+The public website for **Namerr**, a self-hosted media library organiser being developed by **RaggedLabs Media** (`raggedlabs.media`).
 
-- Static website preview implemented in HTML, CSS and vanilla JavaScript; **no framework, build or npm dependency required**.
-- Official public application downloads **are not enabled yet**. The app repository and image publication must pass their separate public-launch checks before download links are activated.
-- Donations **are not enabled yet**. Add a verified payment-provider URL before publishing an actionable donation button.
-- Planned AI, Jellyfin, music, books, audiobooks and photos are clearly identified as roadmap items, not shipped product capabilities.
-- The product's 5-hour application build automation and Docker release process are completely separate from this website.
+## Current publication state — 1 November 2026
 
-## Local preview
+- Public visitors see a branded **Coming Soon** page, focused on planned capabilities, project development status, and contact information.
+- **No public application downloads, account registrations, donation payment links or wallet addresses are active.**
+- Older `docs.html`, `roadmap.html`, `downloads.html`, `about.html` and `support.html` routes return visitors to the relevant section of the coming-soon home page. A public Privacy page and 404 page remain.
+- The previous full multi-page website has been saved in branch `archive/website-v1-before-coming-soon`; the further draft About/donation concepts remain in PR #5.
+- The official N logo is an exact copy of `Namerr-Docker-Icon.png` from the private application development repository.
+- No custom website GitHub Actions workflow was added. Publication uses the existing GitHub Pages system.
 
-Open `index.html` in a browser or serve this directory with `python -m http.server 8000`.
+## Developer and project repositories
 
-## Publish on GitHub Pages
+- RaggedLabs Media: `raggedlabs.media` (brand domain).
+- Organisation: https://github.com/Ragged-Labs.
+- Website repository: `Ragged-Labs/namerr-site`.
+- Official application repository: `Ragged-Labs/namerr` (private prelaunch placeholder, **not** a public release).
+- Legacy development and current Docker image compatibility: `raggedred/emby_organiser_docker` (private).
+- General enquiries: [contact@raggedlabs.media](mailto:contact@raggedlabs.media).
+- X profile: https://x.com/namerrmedia.
 
-1. Make `Ragged-Labs/namerr-site` **public** for GitHub Pages on a GitHub Free plan.
-2. Merge the approved website pull request to `main`.
-3. Repository **Settings → Pages → Build and deployment**: choose **Deploy from a branch**, then **main** and **/(root)**. Save.
-4. Expected Pages URL: https://ragged-labs.github.io/namerr-site/ (confirm in Settings after publishing).
-5. Optionally add a purchased custom domain later; do not add a `CNAME` file until ownership/DNS are verified.
+## Site development
 
-See [LAUNCH_CHECKLIST.md](LAUNCH_CHECKLIST.md) for publication and donation/download activation gates.
+Open `index.html` locally or use a small static file server. Styles for the public launch hold live in `assets/coming-soon.css`. The former full site styles remain in `assets/site.css` for eventual reuse. Do not modify public app download links without confirming official release availability.
 
-## Editing
+## Protect the repository
 
-All links are relative to the repository site path, so Pages works without a custom domain. Update real public links only when tested. Avoid publishing private app repository URLs as working public downloads. No analytics, embeds, trackers, external fonts or cookies are installed by this site.
+See [REPOSITORY_PROTECTION.md](REPOSITORY_PROTECTION.md) and the ruleset template at [docs/rulesets/main-protection.json](docs/rulesets/main-protection.json). **Committing ruleset JSON does not activate server-side GitHub protection**; a repository administrator must create an Active ruleset in Settings.
 
-## Brand assets
-
-The website uses `assets/namerr-logo-8dd16181.png`, an exact byte-for-byte copy of `Namerr-Docker-Icon.png` from `raggedred/emby_organiser_docker`. It is used for the header, favicon, Apple touch icon and Open Graph image. This replaces the original placeholder logo.
-
-## Website logo cache control
-
-All page templates reference the content-versioned official logo `assets/namerr-logo-8dd16181.png` (sha256-like prefix is the Git object SHA prefix). This is an exact copy of `Namerr-Docker-Icon.png` in the application repository and prevents browser caches from reusing previous logo URLs on Docs, Support, Roadmap and the homepage. The original logo path remains in Git for backward compatibility with older cached HTML.
+Security disclosures: [SECURITY.md](SECURITY.md). Before community launch, review [LAUNCH_CHECKLIST.md](LAUNCH_CHECKLIST.md).
