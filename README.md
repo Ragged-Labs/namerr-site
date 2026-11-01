@@ -6,7 +6,7 @@ This is the independent, **currently private prelaunch website** for **Namerr**,
 
 - Static website preview implemented in HTML, CSS and vanilla JavaScript; **no framework, build or npm dependency required**.
 - Official public application downloads **are not enabled yet**. The app repository and image publication must pass their separate public-launch checks before download links are activated.
-- Donations **are not enabled yet**. Buy Me a Coffee (`/namerr`) and Bitcoin (BTC mainnet) are planned, with no receiving address, QR code or payment link until verified.
+- **Buy Me a Coffee**: the project owner confirmed `https://www.buymeacoffee.com/namerr` on 1 November 2026. A direct external link is now in the private website draft; payment checkout and payout settings are not independently verified. **Bitcoin** (BTC mainnet) remains planned, with no receiving address or QR code published.
 - Planned AI, Jellyfin, music, books, audiobooks and photos are clearly identified as roadmap items, not shipped product capabilities.
 - The product's 5-hour application build automation and Docker release process are completely separate from this website.
 

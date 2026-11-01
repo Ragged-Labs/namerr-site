@@ -1,13 +1,13 @@
 # Namerr donations — prelaunch activation checklist
 
-**Status:** planned site copy only. The site is private; no payments are accepted.
+**Status:** the private website draft links to the owner-confirmed Buy Me a Coffee creator page. No payments are processed by the website itself. Bitcoin remains inactive. Publication of the website is still on hold.
 
 ## Buy Me a Coffee
 
-- Proposed creator page: `buymeacoffee.com/namerr`.
-- Account ownership, beneficiary and payout destination are **not verified**. Do not publish an actionable link to this proposed URL until confirmed.
-- Confirm the payout currency, payment method, provider fees, taxation/accounting, refund terms and provider privacy policy.
-- Once ownership is approved, link directly to the verified page with `rel="noopener noreferrer"` and label it as an external payment service.
+- **Owner-confirmed creator page:** `https://www.buymeacoffee.com/namerr` (confirmed 1 November 2026).
+- The website draft uses a clearly labelled external link with `target="_blank"` and `rel="noopener noreferrer"`; it does not embed checkout scripts or collect payment information.
+- Account/page identity has been confirmed by the project owner. The payout destination and platform checkout were **not independently tested** by the assistant.
+- Before public promotion, review payment fees, payout currency, account eligibility, taxation/accounting, refund terms and Buy Me a Coffee privacy terms. Confirm checkout with the actual creator account rather than relying solely on the public username.
 
 ## Bitcoin
 
@@ -20,7 +20,7 @@
 ## Launch and privacy
 
 - Supporting Namerr is strictly optional. A donation does not promise any feature, timeline, premium access or technical support.
-- No account, wallet, QR code, payment button, checkout, cookies or third-party payment scripts are included in prelaunch pages.
+- The draft contains a direct, owner-confirmed external Buy Me a Coffee link; no website-hosted checkout, cookies, payment scripts, Bitcoin wallet address or QR code is included.
 - Update website Privacy and test outgoing links when enabling donations, then get explicit owner approval before publishing.
 - Keep the website and new application repositories private until the deliberate public launch gate.
 

@@ -25,8 +25,8 @@ Website repository: `Ragged-Labs/namerr-site` (**private prelaunch**), separate 
 
 ## Donations — Buy Me a Coffee and Bitcoin
 
-- [ ] Verify the exact Namerr Buy Me a Coffee creator account, payout recipient and fees. Proposed `buymeacoffee.com/namerr` is **unverified** and must not be linked yet.
-- [ ] Verify ownership and payout destination before enabling any payment button.
+- [x] Project owner confirmed `https://www.buymeacoffee.com/namerr` as Namerr’s creator page (1 November 2026); draft website link added.
+- [ ] Before public launch, verify payment checkout, payout recipient, fees, account eligibility and provider terms. These were not independently tested through this chat.
 - [ ] Confirm a dedicated Bitcoin mainnet BTC **public receiving address**, network and beneficiary; never publish wallet private keys or recovery phrases.
 - [ ] Independently verify the exact displayed address and any QR code against the intended wallet.
 - [ ] Explain public blockchain observability, irreversible transfers, fees, and relevant tax/accounting considerations.
