@@ -1,12 +1,12 @@
 # Namerr — official website
 
-This is the independent public website for **Namerr**, a self-hosted TV and movie organiser by Ragged Labs.
+This is the independent, **currently private prelaunch website** for **Namerr**, a self-hosted movie and TV organiser by **RaggedLabs Media** (`raggedlabs.media`).
 
 ## Current site status
 
 - Static website preview implemented in HTML, CSS and vanilla JavaScript; **no framework, build or npm dependency required**.
 - Official public application downloads **are not enabled yet**. The app repository and image publication must pass their separate public-launch checks before download links are activated.
-- Donations **are not enabled yet**. Add a verified payment-provider URL before publishing an actionable donation button.
+- **Buy Me a Coffee**: the project owner confirmed `https://www.buymeacoffee.com/namerr` on 1 November 2026. A direct external link is now in the private website draft; payment checkout and payout settings are not independently verified. **Bitcoin** (BTC mainnet) remains planned, with no receiving address or QR code published.
 - Planned AI, Jellyfin, music, books, audiobooks and photos are clearly identified as roadmap items, not shipped product capabilities.
 - The product's 5-hour application build automation and Docker release process are completely separate from this website.
 
@@ -35,3 +35,13 @@ The website uses `assets/namerr-logo-8dd16181.png`, an exact byte-for-byte copy 
 ## Website logo cache control
 
 All page templates reference the content-versioned official logo `assets/namerr-logo-8dd16181.png` (sha256-like prefix is the Git object SHA prefix). This is an exact copy of `Namerr-Docker-Icon.png` in the application repository and prevents browser caches from reusing previous logo URLs on Docs, Support, Roadmap and the homepage. The original logo path remains in Git for backward compatibility with older cached HTML.
+
+## Developer identity, repositories and launch hold (1 November 2026)
+
+- **RaggedLabs Media:** `raggedlabs.media`; public GitHub organisation `Ragged-Labs`; contact `contact@raggedlabs.media`.
+- **Official product home:** `Ragged-Labs/namerr` is private and currently only a placeholder, **not** a public download source.
+- **Website source:** `Ragged-Labs/namerr-site` is private prelaunch. Keep private until explicitly approved for public release.
+- **Legacy app and Docker compatibility:** `raggedred/emby_organiser_docker` is private. Do not replace existing Docker image paths until migration and upgrades are validated.
+- The parent brand-domain mention is not proof of a configured website. Do not set the site CNAME without domain ownership and DNS verification.
+
+Read [DONATIONS_SETUP.md](DONATIONS_SETUP.md) for activation safeguards and [LAUNCH_CHECKLIST.md](LAUNCH_CHECKLIST.md) for the release gate. Never commit wallet recovery phrases, private keys, payment account credentials or access tokens.
