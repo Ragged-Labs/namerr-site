@@ -15,7 +15,7 @@ The public website intentionally shows **Coming Soon**. Do not replace it with i
 - [x] Branded Coming Soon homepage with Namerr's original N artwork.
 - [x] Public contact email and RaggedLabs Media identity.
 - [x] Active development and planned feature descriptions clearly distinguished.
-- [x] No public download, paid subscription or donation action is active.
+- [x] No public app download or paid subscription is active; voluntary Buy Me a Coffee support is linked. Bitcoin is not yet available.
 - [ ] Confirm GitHub Pages renders on mobile and desktop and verify all visible links.
 - [ ] Complete the future full-site copy and user help before replacing Coming Soon.
 - [ ] Review website security and privacy disclosures before enabling any integrations.
@@ -34,7 +34,8 @@ The public website intentionally shows **Coming Soon**. Do not replace it with i
 - [ ] Verify a dedicated public BTC mainnet receiving address; never expose recovery phrases/private keys.
 - [ ] Independently test any wallet QR image against the wallet address and network.
 - [ ] Disclose relevant provider fees, privacy, tax, irreversible transfers and optional support nature.
-- [ ] Seek owner's explicit approval before making donation links active.
+- [x] Owner-provided Buy Me a Coffee link and matching QR code are present.
+- [ ] Verify any additional donation destinations and obtain owner approval before activation.
 
 ## Product community launch
 
