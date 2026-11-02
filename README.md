@@ -60,3 +60,8 @@ Support includes a locally hosted QR SVG `assets/buymeacoffee-namerr-qr.svg` enc
 - The old redirect pages now acknowledge available Buy Me a Coffee support while keeping downloads closed.
 - Website publishing uses GitHub Actions; website content still has a single deployment pipeline.
 - The default branch protection ruleset must be activated by an administrator in GitHub Settings.
+
+## Website discoverability and progress
+
+- Public pages now include descriptive and social sharing metadata, consistent canonical URLs where appropriate and a sitemap of indexable pages. Legacy redirects and the custom 404 remain noindex.
+- The Coming Soon homepage includes three clear high-level development priority cards, without invented completion percentages or release dates.
