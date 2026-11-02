@@ -11,7 +11,7 @@ The public website for **Namerr**, a self-hosted media library organiser being d
 - Older `docs.html`, `roadmap.html`, `downloads.html` and `about.html` routes return visitors to the relevant section of the coming-soon home page. `support.html` is a dedicated Support and Contact page with responsive equal-height contact cards. A public Privacy page and 404 page remain.
 - The previous full multi-page website has been saved in branch `archive/website-v1-before-coming-soon`; the further draft About/donation concepts remain in PR #5.
 - The official N logo is an exact copy of `Namerr-Docker-Icon.png` from the private application development repository.
-- No custom website GitHub Actions workflow was added. Publication uses the existing GitHub Pages system.
+- The dedicated GitHub Actions workflow at `.github/workflows/publish-pages.yml` now publishes the website, with serialized deployments, pre-deployment checks and one-day Pages artifact retention.
 
 ## Developer and project repositories
 
@@ -35,7 +35,7 @@ Security disclosures: [SECURITY.md](SECURITY.md). Before community launch, revie
 
 ## Support link review
 
-The external Buy Me a Coffee destination currently configured is `https://buymeacoffee.com/namerr`, based on the project owner’s specified prospective name. **The profile and payout recipient have not been independently verified.** Public copy explicitly instructs visitors to verify recipient identity before donating. Do not publish a Bitcoin receiving address without owner-supplied wallet verification.
+Buy Me a Coffee support is linked at `https://buymeacoffee.com/namerr`. The project owner provided its branded QR code; the website's self-hosted QR is verified to decode to the same URL. The beneficiary was not independently audited. No Bitcoin address is published without owner-supplied wallet verification.
 
 ## Planned UI gallery — source images
 
@@ -53,3 +53,10 @@ Four original AI-generated **31 October 2026 Namerr UI concept images** belong u
 ## Buy Me a Coffee QR code
 
 Support includes a locally hosted QR SVG `assets/buymeacoffee-namerr-qr.svg` encoding **https://buymeacoffee.com/namerr**, the Namerr creator URL supplied earlier. Its matrix was validated using OpenCV's QR decoder. This is an independently regenerated pixel-sharp QR rather than the exact attached image artwork, because an uploadable original image file was unavailable. The clickable link remains as a fallback; payment processing occurs on Buy Me a Coffee.
+
+## Prelaunch accuracy update — 2 November 2026
+
+- The MIT licence page describes the public website source, not a public application release.
+- The old redirect pages now acknowledge available Buy Me a Coffee support while keeping downloads closed.
+- Website publishing uses GitHub Actions; website content still has a single deployment pipeline.
+- The default branch protection ruleset must be activated by an administrator in GitHub Settings.
