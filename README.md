@@ -65,3 +65,14 @@ Support includes a locally hosted QR SVG `assets/buymeacoffee-namerr-qr.svg` enc
 
 - Public pages now include descriptive and social sharing metadata, consistent canonical URLs where appropriate and a sitemap of indexable pages. Legacy redirects and the custom 404 remain noindex.
 - The Coming Soon homepage includes three clear high-level development priority cards, without invented completion percentages or release dates.
+
+## Cross-platform prelaunch website update — 14 November 2026
+
+- The homepage now advertises planned Windows and macOS desktop editions alongside Docker/Unraid, without implying that any public installer is available.
+- New `platforms.html` provides detailed future-edition information and a **zero-JavaScript "Find your setup"** selector for Unraid, Windows/local or USB storage, and macOS/mounted network volumes.
+- Windows 11 (x64) and macOS Apple silicon are **initial targets**. macOS Intel builds remain subject to testing. Internal/USB/SMB-NAS libraries and distribution signing and packaging are plans, not shipping guarantees.
+- Shared Namerr naming/review core is intended across editions; `Move to disk` is an **Unraid-backend-only** roadmap capability. Windows/macOS must not expose it as a local desktop action.
+- Before platform-specific write/rename operations, OS permissions, filesystem behaviour, recovery/Undo and interruption testing must pass. Unknown/unverified storage stays scan-and-preview only.
+- Desktop repository plan: initially private `Ragged-Labs/namerr-windows` and `Ragged-Labs/namerr-macos` with versioned platform-specific GitHub Releases when authorised; no public download links or repositories asserted yet.
+- Future step-by-step user guides will cover OS selection, installer signing/publisher checks, setup, NAS permissions, upgrades and previous-version recovery.
+- The website is static: selector uses HTML `<details>` and CSS, never captures visitor preferences or submits data.
