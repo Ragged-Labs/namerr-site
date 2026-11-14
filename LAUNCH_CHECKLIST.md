@@ -43,3 +43,13 @@ The public website intentionally shows **Coming Soon**. Do not replace it with i
 - [ ] Maintain or migrate historic Docker image/update identifiers without breaking existing installations.
 - [ ] Reuse full website drafts from `archive/website-v1-before-coming-soon` and the private feature work without overwriting Coming Soon prematurely.
 - [ ] Announce official release only after public access and downloads are verified.
+
+## Cross-platform distribution launch requirements (DIST-01)
+
+- [x] Public prelaunch site differentiates Docker/Unraid, Windows and macOS as development targets and links a platform selector, with no active install/download buttons.
+- [x] Website explicitly marks Unraid drive placement as host-specific, not a Windows/macOS desktop capability.
+- [ ] Validate Windows 11 x64 installer signing, internal/external/SMB storage permissions, safe writes and recovery.
+- [ ] Validate Apple-silicon macOS signed/notarised DMG, permissions and internal/external/SMB storage. Decide Intel support after testing.
+- [ ] Verify rollback/Undo/interruption safeguards per storage type; default unvalidated paths to scan/preview only.
+- [ ] Validate separate platform release repositories and public GitHub Release artefacts before linking downloads.
+- [ ] Publish screenshot-based installer, permissions, upgrade and recovery user guides per platform before public launch.

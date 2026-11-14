@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<meta name="color-scheme" content="dark">
+<title>Namerr for Windows, Mac, Docker &amp; Unraid — Planned Editions</title>
+<meta name="description" content="See the Namerr platform roadmap for Docker and Unraid, Windows 11 and macOS, plus an interactive guide to choosing the right planned edition for your media library.">
+<link rel="canonical" href="https://ragged-labs.github.io/namerr-site/platforms.html">
+<link rel="icon" type="image/png" href="./assets/namerr-logo-8dd16181.png">
+<link rel="apple-touch-icon" href="./assets/namerr-logo-8dd16181.png">
+<link rel="stylesheet" href="./assets/coming-soon.css?v=6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Namerr">
+<meta property="og:title" content="One Namerr. Your platform. — Planned Windows, Mac &amp; Unraid editions">
+<meta property="og:description" content="Find the planned Namerr edition for your library: Docker/Unraid, Windows or macOS. No public downloads yet.">
+<meta property="og:url" content="https://ragged-labs.github.io/namerr-site/platforms.html">
+<meta property="og:image" content="https://ragged-labs.github.io/namerr-site/assets/namerr-logo-8dd16181.png">
+<meta property="og:image:alt" content="Namerr icon featuring a stylised N">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@namerrmedia">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="ambient ambient-one" aria-hidden="true"></div>
+<header class="site-header"><div class="shell header-inner">
+  <a class="brand" href="./" aria-label="Namerr home"><img src="./assets/namerr-logo-8dd16181.png" width="43" height="43" alt=""><span>namerr<span class="brand-period">.</span></span></a>
+  <nav class="main-nav" aria-label="Main navigation"><a href="./#features">The plan</a><a href="./platforms.html" aria-current="page">Platforms</a><a href="#setup">Find your setup</a><a href="./#previews">UI concepts</a><a href="./#launch">Launch status</a><a href="./support.html">Support</a></nav>
+  <span class="nav-status"><span class="live-dot" aria-hidden="true"></span> IN DEVELOPMENT</span>
+</div></header>
+<main id="main">
+<section class="platform-page-hero shell" aria-labelledby="platform-page-title">
+  <p class="eyebrow">CROSS-PLATFORM ROADMAP</p>
+  <div class="launch-badge"><span class="live-dot" aria-hidden="true"></span> PLANNED DISTRIBUTIONS <span class="badge-divider" aria-hidden="true"></span> NO PUBLIC INSTALLERS YET</div>
+  <h1 id="platform-page-title">One Namerr.<br><span class="gradient-word">Where your library lives.</span></h1>
+  <p class="platform-page-lead">Not everyone stores their media on a server or RAID array. Namerr's roadmap now includes dedicated Windows and macOS desktop editions, built around the same library-organising and guided-review principles as its Docker/Unraid direction.</p>
+  <div class="platform-promise" aria-label="Design principles"><span>Local-first</span><span>No mandatory RAID</span><span>Preview before changes</span></div>
+</section>
+<section class="platforms shell platform-page-editions" id="editions" aria-labelledby="edition-heading">
+  <div class="section-heading">
+    <div><p class="eyebrow">EDITION ROADMAP</p><h2 id="edition-heading">Three ways to make<br><span class="gradient-word">media manageable.</span></h2></div>
+    <p class="section-intro">The packaging approach is planned, not released software. Desktop versions share the intended naming engine and review process, but operating-system-specific capabilities will be clearly separated.</p>
+  </div>
+  <div class="platform-grid">
+    <article class="platform-card platform-card-primary">
+      <div class="platform-card-top"><span class="platform-symbol" aria-hidden="true">▣</span><span class="platform-state">FIRST RELEASE FOCUS</span></div>
+      <h3>Docker / Unraid</h3>
+      <p>Server and self-hosted libraries; browser access to a central collection, with storage mapped into the container.</p>
+      <div class="platform-capabilities"><span>Self-hosted</span><span>Container deployment</span><span>Shared folders</span></div>
+      <p class="platform-scope"><strong>Platform-specific:</strong> planned “Move to disk” array placement requires an Unraid host and backend. It is not a desktop feature.</p>
+    </article>
+    <article class="platform-card">
+      <div class="platform-card-top"><span class="platform-symbol" aria-hidden="true">⊞</span><span class="platform-state">DESKTOP PLANNED</span></div>
+      <h3>Windows</h3>
+      <p>Windows 11 (x64) is the initial target. Plan for internal and USB drives plus SMB/NAS shares, without requiring a server or Docker.</p>
+      <div class="platform-capabilities"><span>Per-user installer planned</span><span>Signed releases</span><span>Drive and share access</span></div>
+      <p class="platform-scope">Rename/move operations require permissions, case/path and interrupted-operation tests first. Unvalidated storage stays scan-and-preview only.</p>
+    </article>
+    <article class="platform-card">
+      <div class="platform-card-top"><span class="platform-symbol" aria-hidden="true">⌘</span><span class="platform-state">DESKTOP PLANNED</span></div>
+      <h3>macOS</h3>
+      <p>Apple-silicon Macs are the initial target, with Intel builds to be considered after validation. Internal, USB and SMB/NAS volumes are in scope.</p>
+      <div class="platform-capabilities"><span>Signed, notarised DMG planned</span><span>External volumes</span><span>Network shares</span></div>
+      <p class="platform-scope">Storage permissions and macOS security controls must pass verification before file-changing actions can be enabled.</p>
+    </article>
+  </div>
+  <p class="platforms-disclaimer"><strong>Development plans, not supported downloads.</strong> Exact installers, OS compatibility and release timing are subject to successful testing and may change. Native Linux packaging remains a future consideration.</p>
+</section>
+<section class="setup-matcher shell" id="setup" aria-labelledby="setup-heading">
+  <div class="section-heading">
+    <div><p class="eyebrow">A LITTLE HELP DECIDING</p><h2 id="setup-heading">Where does<br><span class="gradient-word">your library live?</span></h2></div>
+    <p class="section-intro">Choose a setup below to see which planned edition fits. This guide runs entirely in your browser; it doesn't collect data or select an installer.</p>
+  </div>
+  <div class="setup-choice-list">
+    <details class="setup-choice"><summary><span class="setup-choice-symbol" aria-hidden="true">▣</span><span>I store my media on Unraid or a home server</span><span class="setup-chevron" aria-hidden="true">+</span></summary><div class="setup-answer"><strong>Look for Docker / Unraid.</strong><p>A central, self-hosted edition is planned for mapped folders and server-based libraries. Only a verified Unraid backend can offer future array-drive placement features.</p><a href="#editions">Compare the editions →</a></div></details>
+    <details class="setup-choice"><summary><span class="setup-choice-symbol" aria-hidden="true">⊞</span><span>I keep files on a Windows PC, USB drive or NAS share</span><span class="setup-chevron" aria-hidden="true">+</span></summary><div class="setup-answer"><strong>Look for Namerr for Windows.</strong><p>A planned standalone Windows 11 (x64) edition is aimed at local and SMB/NAS libraries without requiring Docker or RAID. Network and disk-write support will be enabled only after storage safety tests.</p><a href="#editions">Explore Windows plans →</a></div></details>
+    <details class="setup-choice"><summary><span class="setup-choice-symbol" aria-hidden="true">⌘</span><span>I organise media on a Mac or mounted network volume</span><span class="setup-chevron" aria-hidden="true">+</span></summary><div class="setup-answer"><strong>Look for Namerr for macOS.</strong><p>A planned Apple-silicon desktop app targets local, external and SMB/NAS volumes. Intel Macs remain under evaluation. macOS permissions and notarisation are release prerequisites.</p><a href="#editions">Explore Mac plans →</a></div></details>
+  </div>
+  <p class="setup-privacy">No account, form or tracking script is used by this selector.</p>
+</section>
+<section class="safety-path shell" id="safety" aria-labelledby="safety-heading">
+  <div class="section-heading">
+    <div><p class="eyebrow">A CONSISTENT SAFETY MODEL</p><h2 id="safety-heading">Review first.<br><span class="gradient-word">Move with confidence.</span></h2></div>
+    <p class="section-intro">The same safety principles guide each planned edition, while file operations must still meet platform-specific tests.</p>
+  </div>
+  <ol class="safety-path-grid">
+    <li><span class="safety-path-number">01</span><h3>Discover</h3><p>Scan selected library locations and identify naming or metadata issues without changing files.</p></li>
+    <li><span class="safety-path-number">02</span><h3>Review</h3><p>Show proposed naming and location changes, explain uncertainty and require an explicit decision.</p></li>
+    <li><span class="safety-path-number">03</span><h3>Apply safely</h3><p>Enable writes only on validated storage, with logging, recovery and Undo/rollback checks.</p></li>
+  </ol>
+  <p class="platforms-disclaimer">On a desktop volume whose permissions, move behaviour or recovery haven't been validated, Namerr should remain in <strong>scan-and-preview mode</strong>. No public release date is announced.</p>
+</section>
+<section class="platforms-bottom shell">
+  <div><p class="eyebrow">FOLLOW THE BUILD</p><h2>No installers yet.<br>Good things take testing.</h2><p>Distribution repositories, signing, auto-update behaviour and step-by-step user guides are part of the build plan. We'll link verified public downloads when they're ready.</p></div>
+  <div class="platforms-bottom-actions"><a class="primary-link" href="./#launch">See launch progress <span aria-hidden="true">→</span></a><a class="secondary-link" href="./#previews">See the future UI <span aria-hidden="true">↗</span></a></div>
+</section>
+</main>
+<footer class="site-footer"><div class="shell footer-inner"><a class="brand footer-brand" href="./"><img src="./assets/namerr-logo-8dd16181.png" width="30" height="30" alt=""><span>namerr<span class="brand-period">.</span></span></a>
+<div class="footer-links"><a href="./">Home</a><a href="./platforms.html" aria-current="page">Platforms</a><a href="./#previews">UI concepts</a><a href="./#launch">Coming soon</a><a href="./support.html">Support</a><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a><a href="mailto:contact@raggedlabs.media">Contact</a></div><span class="footer-credit">© 2026 RaggedLabs Media</span></div></footer>
+</body></html>
