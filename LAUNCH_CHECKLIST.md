@@ -28,14 +28,15 @@ The public website intentionally shows **Coming Soon**. Do not replace it with i
 - [ ] Add dependable website checks before requiring any check names in the ruleset.
 - [ ] Re-evaluate review approvals when more maintainers join.
 
-## Donation options (future)
+## Donation options
 
-- [ ] Verify control of the proposed Buy Me a Coffee `/namerr` recipient page and payout account.
-- [ ] Verify a dedicated public BTC mainnet receiving address; never expose recovery phrases/private keys.
-- [ ] Independently test any wallet QR image against the wallet address and network.
-- [ ] Disclose relevant provider fees, privacy, tax, irreversible transfers and optional support nature.
-- [x] Owner-provided Buy Me a Coffee link and matching QR code are present.
-- [ ] Verify any additional donation destinations and obtain owner approval before activation.
+- [x] The owner-provided Buy Me a Coffee link and matching QR code are present. The link opens the external service. Namerr's website does not handle checkout.
+- [ ] Verify control of the Buy Me a Coffee creator page, checkout and payout account before broader promotion. Review fees, payout currency, eligibility, refund terms, privacy and accounting requirements.
+- [ ] For future Bitcoin support, obtain owner approval and independently verify a dedicated public Bitcoin mainnet receiving address under the owner's control. Keep keys, seed phrases and signing credentials private.
+- [ ] Decode any Bitcoin QR and compare the full value with the approved address. Treat Lightning as a separate integration.
+- [ ] Before activating any new donation method, review the Support and Privacy copy and verify outgoing links. Explain voluntary support, public blockchain records, applicable fees and irreversible transfers where relevant.
+
+Planning source: [website PR #5](https://github.com/Ragged-Labs/namerr-site/pull/5).
 
 ## Product community launch
 
