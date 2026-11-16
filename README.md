@@ -9,7 +9,7 @@ The public website for **Namerr**, a self-hosted media library organiser being d
 - Public visitors see a branded **Coming Soon** page, focused on planned capabilities, project development status, and contact information.
 - **No public application downloads, account registrations or Bitcoin wallet addresses are active.** A Support page now includes a proposed external Buy Me a Coffee link, with explicit recipient-verification warning.
 - Older `docs.html`, `roadmap.html`, `downloads.html` and `about.html` routes return visitors to the relevant section of the coming-soon home page. `support.html` is a dedicated Support and Contact page with responsive equal-height contact cards. A public Privacy page and 404 page remain.
-- The previous full multi-page website has been saved in branch `archive/website-v1-before-coming-soon`; the further draft About/donation concepts remain in PR #5.
+- The full multi-page draft is preserved in `archive/website-v1-before-coming-soon`. The [launch checklist](LAUNCH_CHECKLIST.md#donation-options) carries forward the remaining donation verification steps from [PR #5](https://github.com/Ragged-Labs/namerr-site/pull/5).
 - The official N logo is an exact copy of `Namerr-Docker-Icon.png` from the private application development repository.
 - The dedicated GitHub Actions workflow at `.github/workflows/publish-pages.yml` now publishes the website, with serialized deployments, pre-deployment checks and one-day Pages artifact retention.
 
